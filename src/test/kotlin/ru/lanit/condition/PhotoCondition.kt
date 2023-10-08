@@ -10,6 +10,7 @@ class PhotoCondition(private val expectedPhoto: String, private val actualPhoto:
         //TODO: encode Base64 photo
         assertThat(expectedPhoto).isBase64
         assertThat(actualPhoto).isBase64
+        assertThat(expectedPhoto).isEqualTo(actualPhoto)
         return expectedPhoto == actualPhoto
     }
 }

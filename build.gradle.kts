@@ -13,6 +13,7 @@ repositories {
 }
 
 dependencies {
+    implementation("org.apache.httpcomponents:httpclient:4.5.14")
     testImplementation(kotlin("test"))
     testImplementation("org.seleniumhq.selenium:selenium-java:4.12.1")
     testImplementation("com.typesafe:config:1.4.2")
