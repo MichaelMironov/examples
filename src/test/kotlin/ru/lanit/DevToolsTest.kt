@@ -10,13 +10,13 @@ import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.devtools.DevTools
-import org.openqa.selenium.devtools.events.CdpEventTypes
-import org.openqa.selenium.devtools.events.CdpEventTypes.*
+import org.openqa.selenium.devtools.events.CdpEventTypes.consoleEvent
+import org.openqa.selenium.devtools.events.CdpEventTypes.domMutation
 import org.openqa.selenium.devtools.events.DomMutationEvent
-import org.openqa.selenium.devtools.v114.network.Network
-import org.openqa.selenium.devtools.v114.page.Page
-import org.openqa.selenium.devtools.v114.page.model.Viewport
-import org.openqa.selenium.devtools.v114.security.Security
+import org.openqa.selenium.devtools.v117.network.Network
+import org.openqa.selenium.devtools.v117.page.Page
+import org.openqa.selenium.devtools.v117.page.model.Viewport
+import org.openqa.selenium.devtools.v117.security.Security
 import org.openqa.selenium.logging.HasLogEvents
 import org.openqa.selenium.support.Color
 import org.openqa.selenium.support.ui.ExpectedConditions
@@ -26,8 +26,7 @@ import java.nio.file.Paths
 import java.time.Duration
 import java.util.*
 import java.util.concurrent.CountDownLatch
-import java.util.concurrent.TimeUnit
-import java.util.concurrent.TimeUnit.*
+import java.util.concurrent.TimeUnit.SECONDS
 import java.util.concurrent.atomic.AtomicReference
 
 class DevToolsTest {
